@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrugSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Registration Phase -->
+        <div id="registration" style="display: block;">
+            <h2>Registration</h2>
+            <form id="reg-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required><br>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <!-- Login Phase -->
+        <div id="login" style="display: none;">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="login-username" required><br>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required><br>
+                <button type="submit">Login</button>
+                <p><a href="#" id="forgot-password">Forgot Password?</a></p>
+            </form>
+        </div>
+
+        <!-- Forgot Password Phase -->
+        <div id="forgot-password-form" style="display: none;">
+            <h2>Reset Password</h2>
+            <form id="reset-password-form">
+                <label for="reset-email">Email:</label>
+                <input type="email" id="reset-email" name="reset-email" required><br>
+                <button type="submit">Send Code</button>
+            </form>
+        </div>
+
+        <!-- Drug Selection Phase -->
+        <div id="drug-groups" style="display: none;">
+           <h2 style="font-family: 'Gabriola'; font-size: 35px;">
+           Select Drug Group
+           </h2>
+
+           <ul>
+                <li><a href="#" data-group="Antibiotics">Antibiotics</a></li>
+                <li><a href="#" data-group="Antidiabetics">Antidiabetics</a></li>
+                <li><a href="#" data-group="Antithyroids">Antithyroids</a></li>
+                <li><a href="#" data-group="Antimalarials">Antimalarials</a></li>
+                <li><a href="#" data-group="Antileprosy">Antileprosy</a></li>
+                <li><a href="#" data-group="Antitubercle">Antitubercle</a></li>
+                <li><a href="#" data-group="ARTs (Antiretrovirals)">ARTs (Antiretrovirals)</a></li>
+                <li><a href="#" data-group="Antihypertensives">Antihypertensives</a></li>
+                <li><a href="#" data-group="Antiarrhythmics">Antiarrhythmics</a></li>
+                <li><a href="#" data-group="Anticonvulsants">Anticonvulsants</a></li>
+                <li><a href="#" data-group="Antiasthmatics">Antiasthmatics</a></li>
+                <li><a href="#" data-group="Antidepressants">Antidepressants</a></li>
+                <li><a href="#" data-group="Antiemetics">Antiemetics</a></li>
+                <li><a href="#" data-group="Antitussives">Antitussives</a></li>
+                <li><a href="#" data-group="Anticancer">Anticancer</a></li>
+                <li><a href="#" data-group="Non-Steroidal Antiinflammatory Drugs(NSAIDs)">Non-Steroidal Antiinflammatory Drugs(NSAIDs)</a></li>
+                <li><a href="#" data-group="Local Anesthetics">Local Anesthetics</a></li>
+                <li><a href="#" data-group="General Anesthetics">General Anesthetics</a></li>
+                <li><a href="#" data-group="Opioids">Opioids</a></li>
+                <li><a href="#" data-group="OralContraceptives">Oral Contraceptives</a></li>
+                <li><a href="#" data-group="Erectile Dysfunction Drugs">Erectile Dysfunction Drugs</a></li>
+                <li><a href="#" data-group="Uterine stimulants & Abortifacients">Uterine stimulants & Abortifacients</a></li>
+                <li><a href="#" data-group="MuscleRelaxants">Muscle Relaxants</a></li>
+                <li><a href="#" data-group="Antifungals">Antifungals</a></li>
+                <li><a href="#" data-group="Antipsychotics">Antipsychotics</a></li>
+                <li><a href="#" data-group="Antidiarrheals">Antidiarrheals</a></li>
+                <li><a href="#" data-group="Ear Defect Drugs">Ear Defect Drugs</a></li>
+                <li><a href="#" data-group="Eye Defect Drugs">Eye Defect Drugs</a></li>
+                <li><a href="#" data-group="Vaccines">Vaccines</a></li>
+                <li><a href="#" data-group="Antiviral">Antiviral</a></li>
+                <li><a href="#" data-group="Antiparkinsonism">Antiparkinsonism</a></li>
+                <li><a href="#" data-group="Antischizophrenic">Antischizophrenic</a></li>
+                <li><a href="#" data-group="Local Hormones And the drugs affecting">Local Hormones And the drugs affecting</a></li>
+    </ul>
+    </div>
+    <div id="drug-info-container" style="display: none;">
+        <h3>Drug information</h3>
+        <p id="drug-name" style="font-family: Gabriola; font-size: 28px; color: blue; text-shadow: black;"></p>
+        <p id="drug-moa"></p>
+        <p id="drug-indications"></p>
+        <p id="drug-contraindications"></p>
+        <p id="drug-SideEffects"></p>
+        <p id="drug-Diseases"></p>
+        <p id="drug-seriousSideEffects"></p>
+        <p id="drug-dosage"></p>
+    </div>
+    </div>
+</div>
+    <script src="Script.js"></script>
+</body>
+</html>
