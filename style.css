@@ -1,0 +1,119 @@
+/* Move the import to the top of file */
+@import url('https://fonts.googleeapis.com/css2?family=Gabriola&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+/* Container for registration, login and forgot password phases */
+.container {
+    width: 40%;
+    height: -5%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-family: "Curlz MT";
+    font-size: 35px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Gabriola';
+    font-size: 25px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #0101ae;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #023ab3;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin: 0;
+}
+
+ul li {
+    margin: 9px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Gabriola'; /* Change font family */
+    font-size: 23px; /* Change font size */
+    color: #000000; /* Change font color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 15px 30px; /* Add some padding */
+    display: block; /* Make links block elements for better styling */
+    margin-bottom: 2px;
+    line-height: 0.3;
+    box-sizing: border-box;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    font-family: 'Gabriola';
+    font-size: 23px;
+    color:#000000;
+}
+
+/* Import the Gabriola font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gabriola&display=swap');
+
+/* Apply Gabriola font to the entire drug-info section */
+#drug-info {
+    font-family: 'Gabriola', serif; /* Set Gabriola font for all text in this section */
+    font-size: 24px;
+    padding: 10px;
+    color: #000000;
+}
+#drug-info-container {
+    width: 800%;
+    max-width: 800px;
+    margin: 20 auto;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 30px;;
+    box-shadow: 0 0 15px rgba(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    right: 100%;
+    bottom: 50%;
+    text-align: left;
+    align-items: center;
+    font-family: 'Gabriola';
+    font-size: 25px;
+}
+.detail-section {
+    margin-bottom: -5px;
+}
