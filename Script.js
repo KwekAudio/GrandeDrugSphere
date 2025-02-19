@@ -1,28 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    // Registration form submit event
-    document.getElementById('reg-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        // Registration logic here
-    });
 
-    // Login form submit event
-    document.getElementById('login-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        // Login logic here
-    });
-
-    // Forgot password link click event
-    document.getElementById('forgot-password').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.getElementById('login').style.display = 'none';
-        document.getElementById('forgot-password-form').style.display = 'block';
-    });
-
-    // Forgot password form submit event
-    document.getElementById('reset-password-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        // Reset password logic here
-    });
 
     // Example of handling drug group selection
     document.querySelectorAll('[data-group]').forEach(function(element) {
