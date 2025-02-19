@@ -10,87 +10,8 @@
     });
 });
 
-// Sample users array for registration and login
-const users = [];
 
-// Show registration form
-function showRegistration() {
-    document.getElementById('registration').style.display = 'block';
-    document.getElementById('login').style.display = 'none';
-    document.getElementById('drug-groups').style.display = 'none';
-}
-
-// Show login form
-function showLogin() {
-    document.getElementById('registration').style.display = 'none';
-    document.getElementById('login').style.display = 'block';
-    document.getElementById('drug-groups').style.display = 'none';
-}
-
-// Show drug groups after login
-function showDrugGroups() {
-    document.getElementById('registration').style.display = 'none';
-    document.getElementById('login').style.display = 'none';
-    document.getElementById('drug-groups').style.display = 'block';
-}
-
-// Handle user login
-document.getElementById('login-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-   
-    const username = document.getElementById('login-username').value;
-    const password = document.getElementById('login-password').value;
-   
-    const user = users.find(user => user.username === username && user.password === password);
-   
-    if (user) {
-        showDrugGroups();
-    } else {
-        alert('Invalid username or password.');
-    }
-});
-
-// Handle password reset
-document.getElementById('forgot-password-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-   
-    const email = document.getElementById('forgot-email').value;
-    alert('A reset link has been sent to your email.');
-    document.getElementById('forgot-password').style.display = 'none';
-    document.getElementById('reset-password').style.display = 'block';
-});
-
-// Handle new password submission
-document.getElementById('reset-password-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-   
-    const newPassword = document.getElementById('new-password').value;
-    const confirmNewPassword = document.getElementById('confirm-new-password').value;
-   
-    if (newPassword === confirmNewPassword) {
-        alert('Password reset successful!');
-        showLogin();
-    } else {
-        alert('Passwords do not match.');
-    }
-});
-
-// Handle user registration
-document.getElementById('reg-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-   
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirm-password').value;
-   
-    if (password === confirmPassword) {
-        users.push({ username, password });
-        alert('Registration successful! Please check your email for the confirmation code.');
-        showLogin();
-    } else {
-        alert('Passwords do not match.');
-    }
-});
+    
 // Show drug info when a drug group is selected
 function showDrugInfo(group) {
     document.getElementById('drug-info-container').style.display = 'block';
